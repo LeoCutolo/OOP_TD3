@@ -23,6 +23,9 @@ public abstract class Product implements Discount, Comparable<Product> {
             throw new IllegalArgumentException("Number of items can't be negative");
         }
         this.nbItems = nbItems;
+        if (this.discountValue < 0 || this.discountValue > 100){
+            throw new IllegalArgumentException("Discount value can't be negative or greater than 100");
+        }
         this.discountValue = discountValue;
     }
 
