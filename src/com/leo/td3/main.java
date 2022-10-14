@@ -51,7 +51,11 @@ public class main {
             System.out.println(product);
         }
         System.out.println("\nSorting according to price");
-        Collections.sort(price, Comparator.comparingDouble());
+        ProductList.sort(null);
+
+        for (Product product : ProductList){
+            System.out.println(product);
+        }
 
         System.out.println("\n\nIt's sales time ! ");
 

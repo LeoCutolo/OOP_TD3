@@ -18,11 +18,11 @@ public class Accessories extends Product{
     }
 
     @Override
-    public int compareTo(Double o) {
-        if (this.getPrice() > o){
+    public int compareTo(Product o) {
+        if (this.getPrice() > o.getPrice()){
             return 1;
         }
-        else if (this.getPrice() == o){
+        else if (this.getPrice() == o.getPrice()){
             return 0;
         }
         return -1;

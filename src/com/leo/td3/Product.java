@@ -3,7 +3,7 @@ package com.leo.td3;
 import java.util.ArrayList;
 import java.util.concurrent.atomic.AtomicInteger;
 
-public abstract class Product implements Discount, Comparable<Double> {
+public abstract class Product implements Discount, Comparable<Product> {
     static double income = 0;
     private static AtomicInteger count = new AtomicInteger(0);
     private int number;
